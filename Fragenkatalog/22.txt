@@ -1,0 +1,23 @@
+/* In dieser Aufgabe ist Fehlerbehandlung nicht explizit gefragt */
+
+#include<stdio.h>
+
+int main(void){
+  int x,y;
+  printf("Gib zwei positive ganze Zahlen nacheinander ein:\n");
+  scanf("%d", &x); // scannt die Zalen aus dem Terminal und speichert sie an der Adresse der jeweiligen Variable
+  scanf("%d", &y);
+  printf("\n");
+
+  printf("%d\n", x+y);
+  printf("%d\n", x*y);
+
+  if(x > y){ // nötige geforderte Fallunterscheidung für positive Differenz bzw. Quotient
+    printf("%d\n", x-y);
+    printf("%f\n”",(float) x/y); //hier muss ein typecast passieren
+  }
+  else{
+    printf("%d\n", y-x);
+    printf("%f\n",(float) y/x); //hier muss ein typecast passieren
+  }
+}
