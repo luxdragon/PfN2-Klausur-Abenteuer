@@ -1,0 +1,20 @@
+// Es funktioniert, aber wahrschlich sollten wir es anders implementieren
+
+void rev_compl_DNA(char *seq, size_t leng) {
+    for(size_t i = 0; i<leng; i++) {
+        switch(seq[i]) {
+            case 'a':
+                seq[i] = 't';
+                break;
+            case 't':
+                seq[i] = 'a';
+                break;
+            case 'c':
+                seq[i] = 'g';
+                break;
+            case 'g':
+                seq[i] = 'c';
+                break;
+        }
+    }
+}

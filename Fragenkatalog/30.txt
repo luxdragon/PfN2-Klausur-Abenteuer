@@ -1,0 +1,7 @@
+void reverse_lines(FILE *fpin) {
+    char buffer[1024];
+    while(fgets(buffer, 1024, fpin)!=NULL) {
+        reverse_string(buffer, 1024);
+        printf("%s", buffer);
+    }
+}

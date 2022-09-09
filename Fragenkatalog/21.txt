@@ -15,7 +15,7 @@ union int_or_float{
   float y;
 };
 
-//alternativ und noch leichter merkbar:
+//alternativ und noch leichter zu merken:
 typedef union {
   int x;
   float y;

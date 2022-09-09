@@ -1,0 +1,2 @@
+Der Symbol '\0' dient der Terminierung von Strings, ohne ihn würde ein
+String kein Ende an der rechten Seite haben.
