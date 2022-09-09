@@ -19,3 +19,23 @@ int alpha_num(char c) {
 
     return i;
 }
+
+#include<stdio.h>
+#include<ctype.h>
+#include<stdlib.h>
+
+
+//######## gefragte Funktion ##############
+int alpha_num(int cc){
+
+  if(isupper(cc) != 0){ // if(('A' <= cc) && (cc <= 'Z'))
+    return cc-'A'+1; // 'a' steht für die Zahl 97 entsprechend ASCII-Tabelle
+  }
+  else if(islower(cc) != 0){ // if(('a' <= cc) && (cc <= 'z'))
+    return cc-'a'+1;
+  }
+  else{ // optionale Fehlerbehandlung
+    printf("Fehler");
+    return -1;
+  }
+}
