@@ -6,7 +6,7 @@
 struct Datum{
   int day;
   char *month;
-  int year; 
+  int year;
 };
 
 /* Dekleration von union*/
@@ -14,6 +14,12 @@ union int_or_float{
   int x;
   float y;
 };
+
+//alternativ und noch leichter merkbar:
+typedef union {
+  int x;
+  float y;
+} int_or_float;
 
 int main(void){
   struct Datum date; //Deklaration einer Instanz von Datum
@@ -34,4 +40,6 @@ int main(void){
   printf("%f\n", z.y);
 
   /* man kann dann sehen, dass z.x nicht mehr gespeichert ist */
+  /* würde man aber z.y zuerst deklarieren und dann z.x, wäre der Wert von z.y
+  nur noch ungefähr gespeichert. Warum? Guckt euch Videos dazu an*/
 }

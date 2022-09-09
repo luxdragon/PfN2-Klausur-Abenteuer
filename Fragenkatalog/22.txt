@@ -21,3 +21,23 @@ int main(void){
     printf("%f\n",(float) y/x); //hier muss ein typecast passieren
   }
 }
+
+//noch eine Implementierung mit sscanf und mit der Fehlerbehandlung
+
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+	int i, j;
+	if (argc != 3 || sscanf(argv[1], "%u", &i) != 1 || sscanf(argv[2], "%u", &j) != 1) {
+		fprintf(stderr, "Error, correct input: %s <pos. integer> <pos. integer>", argv[0]);
+	}
+	printf("%u\n", i+j);
+	printf("%u\n", i*j);
+	if (i>=j) {
+        printf("%u\n", i-j);
+	} else {
+        printf("%u\n", j-i);
+    }
+    printf("%f\n", (float) i/j);
+    return 0;
+}

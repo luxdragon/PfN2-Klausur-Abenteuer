@@ -1,4 +1,4 @@
-/* 
+/*
 Die Idee ist die Anzahl der Elemente mit Hilfe von sizeof() zu bestimmen.
 Anzahl der Elemente = sizeof(ckeywords)/sizeof(char *).
 Damit hat man eine Anzahl über die man iterieren kann. Mit jeder Iteration
