@@ -1,7 +1,7 @@
 //@Morgall kannst du deine Lösung hier aufschreiben, ich habe die Bildschirmaufnahme verloren (done)
 
 /*
-hier ist das gemeint, was in der Vorlesung behandelt wurde. Siehe F.448-350.
+hier ist das gemeint was in der Vorlesung behandelt wurde. Siehe F.448-350.
 
 Diese Aufgabe könnte genau so auch für andere behandelte Datentypen als
 linked-lists drankommen, da diese Form der Datentypen hohes
