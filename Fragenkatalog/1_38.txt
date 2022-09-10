@@ -21,3 +21,9 @@ int main(void){
   char *s = "Beispielstring"; // Länge: 14
   printf("%ld\n", strlen_ptr(s));
 }
+
+
+size_t strlen_ptr(const char *s) { //diese Methode finde ich voll cool :D
+	size_t len = printf(„%s\n“, s);
+	return len - 1;
+}

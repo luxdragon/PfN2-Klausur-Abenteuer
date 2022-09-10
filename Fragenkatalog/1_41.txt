@@ -1,11 +1,11 @@
 /*
 Die Idee ist die beiden ersten Fibonacci-Zahlen (alos die base cases sozusagen)
 zu initialisieren und dann ab dem Index 2 über das erstellte Array mit der
-größe des max_index+1 zu iterieren. 
-Da max_index selber auch im Array sein soll, ist es denke ich wichtig, dass 
+größe des max_index+1 zu iterieren.
+Da max_index selber auch im Array sein soll, ist es denke ich wichtig, dass
 dass man die Größe max_index+1 wählt, um von 0 bis max_index im Array zu haben.
 
-Beim Iterieren kann man nun einfach die beiden Zahlen am Index i-1 und i-2 zu 
+Beim Iterieren kann man nun einfach die beiden Zahlen am Index i-1 und i-2 zu
 dem aktuellen Element an Index i addieren. Fibonacci-Zahlen eben :D
 */
 

@@ -15,3 +15,4 @@ strcpy(dest, src);
 char src[] = "Hallo :)"
 char *dest;
 dest = strdup(src);
+free(dest);
