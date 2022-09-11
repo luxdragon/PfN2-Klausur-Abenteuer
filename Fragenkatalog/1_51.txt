@@ -1,12 +1,4 @@
 /*
-Man darf über jedes Array nur jeweils 1x gehen.
-
-Die Idee ist immer die Werte in beiden Arrays mit dem gleichen Index zu 
-vergleichen und dabei immer in dem Array weiter zu gehen, bei dem man gerade
-den kleineren Wert findet. Das macht man, bis beide Array durchgelesen sind.
-
-Wenn man das so macht, dann gibt es den Sonderfall, dass die beiden gefundenen 
-Zahlen im Array gleich sind. Dann wird ein count hochgezählt.
 */
 
 #include<stdio.h>
