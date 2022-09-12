@@ -22,8 +22,7 @@ int main(void){
   printf("%ld\n", strlen_ptr(s));
 }
 
-
-size_t strlen_ptr(const char *s) { //diese Methode finde ich voll cool :D
-	size_t len = printf(„%s\n“, s);
-	return len - 1;
+//diese Methode finde ich voll cool :D ist aber wahrscheinlich nicht zulässig :C
+size_t strlen_ptr(const char *s) {
+	return (size_t) printf(„%s\n“, s) - 1;
 }
