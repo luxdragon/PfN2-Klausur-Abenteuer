@@ -1,0 +1,31 @@
+/*
+In der VL wurde sich auf vector, map, set aus STL beschränkt.
+
+
+vector:
+#include<vector>
+- Ist so ziemlich die allgemeinste Liste, die man sich vorstellen kann. 
+- Ist eine Klasse und hat die gängigen Komfortfunktionen.
+- Kann alle möglichen Datentypen beinhalten und kümmert sich selbst dynamisch
+  um Speicher.
+- Kann random access
+- kann vorwärts und rückwärts iteriert werden
+
+
+map:
+#include<map>
+- Ist ähnlich dictionaries aus Python.
+- Es werden Schlüssel/Wert-Paare gespeichert.
+- Kein (guter) random access.
+- kann vorwärts und rückwärts iteriert werden
+
+
+set:
+#include<set>
+- ist das programmatische Äquivalent der mathematischen Menge
+- enthält keine doppelten Werte
+- kann vorwärts und rückwärts iteriert werden
+
+
+gerne ergänzen
+*/
