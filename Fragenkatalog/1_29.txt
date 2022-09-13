@@ -1,25 +1,3 @@
-// Es funktioniert, aber wahrschlich sollten wir es anders implementieren
-
-void rev_compl_DNA(char *seq, size_t leng) {
-    for(size_t i = 0; i<leng; i++) {
-        switch(seq[i]) {
-            case 'a':
-                seq[i] = 't';
-                break;
-            case 't':
-                seq[i] = 'a';
-                break;
-            case 'c':
-                seq[i] = 'g';
-                break;
-            case 'g':
-                seq[i] = 'c';
-                break;
-        }
-    }
-}
-
-
 /*
 Die Idee bei dieser Aufgabe ist über das char array mit den DNA-Sequenz zu
 iterieren und dabei Fallunterscheidungen für jeden Buchstaben zu prüfen.
@@ -27,7 +5,7 @@ Das wird über eine seperate Funktion mit switch case Anweisungen gelöst.
 Man muss natürlich zusätzlich darauf achten, dass die Zeichen in der Sequenz
 umgekehrt werden sollen. Dies wird über eine temporäre Variable und Iteration
 wie in Aufgabe 1_28 erreicht.
-Nur wird hier über die Länge (len+1)/2 iteriert um die ungerade Fälle zu 
+Nur wird hier über die Länge (len+1)/2 iteriert um die ungerade Fälle zu
 berücksichtigen:
 
 - so werden bei einem Array der Länge 8; (8+1)/2 = 4.5 -> 4 (wird als

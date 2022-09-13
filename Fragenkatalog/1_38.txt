@@ -21,8 +21,3 @@ int main(void){
   char *s = "Beispielstring"; // Länge: 14
   printf("%ld\n", strlen_ptr(s));
 }
-
-//diese Methode finde ich voll cool :D ist aber wahrscheinlich nicht zulässig :C
-size_t strlen_ptr(const char *s) {
-	return (size_t) printf(„%s\n“, s) - 1;
-}

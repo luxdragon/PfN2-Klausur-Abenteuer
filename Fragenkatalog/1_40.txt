@@ -37,3 +37,5 @@ void show_arr(int *arr, size_t len){
   }
   printf("]\n\n");
 }
+
+//Tutor fragen: wie funktioniert static in C und in C++?

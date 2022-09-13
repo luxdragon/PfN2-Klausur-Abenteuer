@@ -1,4 +1,5 @@
-//Die Skizze befindet sich in der Datei 12.png
+/* Die Skizze befindet sich in der Datei 12.png
 Der Wert von a ist 1, von b ist 16 und von ptr ist die Adresse von b (also &b).
+*/
 
-//Frage für das Tutorium: Wie kann man systematisch die Speichergröße eines Zeigers bestimmen
+//Tutor fragen: Wie kann man systematisch die Speichergröße eines Zeigers bestimmen?

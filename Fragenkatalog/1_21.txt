@@ -15,11 +15,11 @@ union int_or_float{
   float y;
 };
 
-//alternativ und noch leichter zu merken:
+/* alternativ und noch leichter zu merken:
 typedef union {
   int x;
   float y;
-} int_or_float;
+} int_or_float; */
 
 int main(void){
   struct Datum date; //Deklaration einer Instanz von Datum

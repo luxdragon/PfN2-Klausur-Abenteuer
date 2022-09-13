@@ -2,7 +2,7 @@
 Hier ist mal wieder die große Frage, ob der allokierte Speicherbereich einfach
 ein konstant großer ist, oder ob er jedes Mal verändert werden soll.
 
-Das ist ja eigentlich blöd, weil allokieren/reallokieren von Speicher eine 
+Das ist ja eigentlich blöd, weil allokieren/reallokieren von Speicher eine
 relativ teure Operation ist.
 (Außer in extrem kleinen Systemen, bei denen man den Luxus nicht hat)
 
@@ -12,7 +12,7 @@ Main iteriert über argv.
 strcpy kopiert den ganzen string aus dem jeweiligen argv Eintrag in den
 allokierten Speicherbereich. Gleichzeitig holt man sich mit strlen die Länge des
 jeweiligen Strings.
-Somit kann man vom Ende bis zum Anfang des Strings iterieren und dabei die 
+Somit kann man vom Ende bis zum Anfang des Strings iterieren und dabei die
 Buchstaben ausgeben.
 
 Der Witz ist: Dafür bräuchte man kein temp Array. Man könnte genauso schauen

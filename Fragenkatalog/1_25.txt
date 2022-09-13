@@ -6,6 +6,8 @@ dann wir es einen Integerwert haben, dass kleiner ist als der von klein "a".
 Num müssen wir nur noch den Integerwert unseres Buchstabes mit dem Integerwert
 entweder gross oder klein "a"s zu subtrahieren. */
 
+// diese Funktion benutzen wenn ihr nicht mit ctype.h arbeiten wollt
+
 int alpha_num(char c) {
     int i;
     char klein_a = 'a';

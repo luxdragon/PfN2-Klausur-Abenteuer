@@ -19,3 +19,5 @@ long sum_of_lines(const char *progname, const char *filename) {
     fclose(fp);
 	return summe;
 }
+
+//Tutor fragen: Wie funktioniert sscanf beim ablesen von Variablen aus Strings?
