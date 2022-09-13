@@ -1,0 +1,21 @@
+/*
+
+In den Screencasts von 2021 überspringt er namespaces natürlich
+
+cpp_slides.pdf Folie 17
+
+Man kann ein Programm in verschiedene namespaces aufteilen.
+
+In verschiedenen namespaces können identische identifiers genutzt werden.
+
+Damit werden Namenskonflikte verhindert
+
+Man greift auf verschiedene namespaces über den scope Operator :: zu.
+
+Das ist also das was man macht, wenn man sowas schreibt wie std::string
+
+
+
+
+gerne ergänzen
+*/
