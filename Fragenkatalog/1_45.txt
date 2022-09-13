@@ -1,5 +1,5 @@
 /*
-Hier muss man beachten, dass bei einem Array mit n Einträgen höchstens n 
+Hier muss man beachten, dass bei einem Array mit n Einträgen höchstens n
 Vergleiche n Vergleiche des Schlüssels mit dem Array erlaubt sind.
 
 
@@ -16,11 +16,12 @@ Zu beachten: Normales linear search funktioniert auch bei ungeordneten arrays
 
 const size_t *linearsearch_sm_geq(const size_t *leftptr, const size_t *rightptr, size_t key){
   while(leftptr != rightptr){
-    if(*leftptr >= key){ 
+    if(*leftptr >= key){
       return leftptr;
     }
     leftptr++;
   }
+  return NULL;
 }
 
 
