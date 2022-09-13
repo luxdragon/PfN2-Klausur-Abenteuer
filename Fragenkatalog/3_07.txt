@@ -1,0 +1,20 @@
+/*
+cpp_slides.pdf Folie 54-55
+
+
+Template ermöglicht calls von der gleichen Funktion mit verschiedenen 
+Datentypen.
+
+Funktion wird mit Platzhalter für Datentyp implementiert
+
+Der compiler erzeugt zur Compilezeit dann beim Funktionsaufruf den wirklichen
+Code der Funktion mit dem entsprechenden Datentyp indem er den Platzhalter mit
+dem gewollten Datentyp ersetzt.
+
+Templates ersparen redudanten Code
+Programm kann durch compiler stark optimiert werden
+Templates ermöglichen Abstraktion ohne Laufzeit zu erhöhen
+
+
+Es gibt nicht nur template Funktionen, sondern auch z.b. template classes
+*/
