@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
     }
     printf("\n");
   }
-
+  free(temp);
   //better_sol(argc, argv); // optional
 }
 

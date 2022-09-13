@@ -19,7 +19,7 @@ int main(void) {
   size_t allocated = 5;
   size_t nextfree = 0;
   long read_long;
-  long *last_negative = NULL; // KORREKTUR size_t last_negative; 
+  long *last_negative = NULL; // KORREKTUR size_t last_negative;
   long *arr = malloc(allocated * sizeof *arr); // array von Größe 5*long erstellt,
 
   while (scanf("%ld",&read_long) == 1) //einlesen von stdin
@@ -35,7 +35,7 @@ int main(void) {
   }
   if (last_negative != NULL)
 //KORREKTUR: printf("last negative value %ld was at index %lu\n", *(arr+last_negative), last_negative);
-    printf("last negative value %ld was at index %lu\n", *last_negative, (size_t) (last_negative - arr)); 
+    printf("last negative value %ld was at index %lu\n", *last_negative, (size_t) (last_negative - arr));
   return EXIT_SUCCESS;
 }
 
@@ -50,7 +50,7 @@ kopiert und den alten dann freed)
 
 Wenn man am Ende last_negative dereferenziert, dann kann es sein, dass man nicht
 -3 bekommt, sondern etwas völlig anderen, weil last_negative vielleicht nicht
-mehr auf die -3 zeigt, wenn der alte Speicher schon wieder von etwas anderem 
+mehr auf die -3 zeigt, wenn der alte Speicher schon wieder von etwas anderem
 genutzt wurde.
 
 Dieses Problem ist einfach zu lösen, indem man last_negative nicht als pointer,
