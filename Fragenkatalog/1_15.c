@@ -1,5 +1,3 @@
-//@Morgall kannst du deine Lösung hier aufschreiben, ich habe die Bildschirmaufnahme verloren (done)
-
 /*
 hier ist das gemeint was in der Vorlesung behandelt wurde. Siehe F.448-350.
 
@@ -9,7 +7,7 @@ Abstraktions-/Verallgemeinerungspotential haben.
 Z.b. könnte man hier auch nach binary trees fragen.
 
 Dateianfänge und Enden beziehen sich natürlich nur auf den Kontext der Aufgabe.
-So fehlt z.B. die main-function 
+So fehlt z.B. die main-function
 */
 
 //Die Deklarierung muss in der Header-Datei list.h erfolgen:

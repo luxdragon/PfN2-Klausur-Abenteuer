@@ -1,5 +1,5 @@
 /*
-Wieder muss erreicht werden, dass sich die Wahrscheinlichkeiten über das 
+Wieder muss erreicht werden, dass sich die Wahrscheinlichkeiten über das
 Intervall [0,1) verteilen um das gleiche wie in der letzten Aufgabe zu erreichen
 
 Das ist zu erreichen indem man aus dem gegebenen prob array ein array aus
@@ -36,7 +36,7 @@ char *random_sequence_prob(const char *alphabet,const double *prob,size_t n){
 
 /*Initialisierung des Arrays das die Partialsummen trägt */
   probs_cummulative[0] = 0.0;
-  for(size_t i = 0; i < len; ++i){ 
+  for(size_t i = 0; i < len; ++i){
     sum_prob += prob[i];
     probs_cummulative[i+1] = sum_prob;
   }
@@ -57,6 +57,6 @@ int main(void){
   size_t n = 15;
 
   char *res = random_sequence_prob(alph, prob, n);
-  
+
   printf("%s\n",res); //das funktioniert, obwohl der string nicht \0 terminiert ist
 }

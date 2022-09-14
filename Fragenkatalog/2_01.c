@@ -18,8 +18,8 @@ Das ist auch deswegen der Fall, da int's immer abgerundet werden.
 Für den gezinkten Würfel muss man das Intervall [0,1) entsprechend den Vorgaben
 in 6 Teile teilen.
 Wie viel 'range' für welche Zahl im Intervall vorgesehen ist, repräsentiert die
-jeweilige Wahrscheinlichkeit. 
-So erhält z.B. der Fall dass eine 6 gewürfelt werden soll, bei weitem 
+jeweilige Wahrscheinlichkeit.
+So erhält z.B. der Fall dass eine 6 gewürfelt werden soll, bei weitem
 am meisten 'range', damit die Wahrscheinlichkeit steigt, dass das Ergebnis von
 drand48() in diesem Teil des Intervalls liegt.
 
@@ -62,7 +62,7 @@ int gezinkter_wuerfel(void){
 }
 
 int fairer_wuerfel(void){
-  return 1 + 6*drand48();
+  return 1 + 6*drand48(); //drand48() wird nie gleich 0.
 }
 
 int main(void){
@@ -74,7 +74,7 @@ int main(void){
   }
   printf("\n\n");
 
-  printf("Gezinkt: ");  
+  printf("Gezinkt: ");
   for(size_t i = 0; i < 100; ++i){ //100x gezinkt würfeln
     printf("%d ", gezinkter_wuerfel());
   }

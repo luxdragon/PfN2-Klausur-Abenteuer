@@ -24,5 +24,8 @@ mit Minimum x_min in [l,r] ist*
 
 => f hat also nur genau ein Minimum im gegebenen Intervall
 
-*/
 
+Die Bedingungen kurzgesagt:
+1) es existiert nur ein Minimum x_min zwischen l und r.
+2) Für alle x<x_min und für alle x>x_min gilt f(x)>f(x_min).
+*/
