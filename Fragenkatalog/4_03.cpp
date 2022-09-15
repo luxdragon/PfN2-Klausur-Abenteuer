@@ -1,4 +1,8 @@
 /*
+Wieder daran denken dass lpthread extra gelinked werden muss. 
+Befehl zum compilen:
+c++ -o 4_03.o 4_03.cpp -lpthread
+
 Wurde im Manager/Worker thread model behandelt; thread.pdf ab Folie 59
 
 angegebene Funktion pfn:run:_threaded() ist auf Folie 78 zu finden
