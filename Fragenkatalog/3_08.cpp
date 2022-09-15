@@ -4,7 +4,7 @@
 
 template<typename T>
 T getmin(T a, T b){
-  return a < b ? a : b;
+  return a < b ? a : b; //sehr fancy :)
 }
 
 

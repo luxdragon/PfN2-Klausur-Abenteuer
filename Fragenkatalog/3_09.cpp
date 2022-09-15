@@ -3,7 +3,7 @@
 Die Idee ist die beiden Variablen zu vertauschen, indem man den jewils anderen
 in den Speicherbereich des ersten schreibt.
 
-Dafür braucht man eine zusätzliche Variable in welcher einer der Werte 
+Dafür braucht man eine zusätzliche Variable in welcher einer der Werte
 zwischengespeichert wird
 
 */
@@ -13,7 +13,7 @@ zwischengespeichert wird
 #include<iostream>
 
 template<typename T>
-void swap(T &a, T &b){
+void swap(T &a, T &b){ //sind das Referenzen und wie unterscheiden sie sich von Zeigern? Den Tutor fragen.
   T temp = a;
   a = b;
   b = temp;

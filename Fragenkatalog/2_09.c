@@ -29,3 +29,18 @@ int main(void){
   printf("%e\n", eps);
 
 }
+
+
+/* Alternativ:
+#include <stdio.h>
+double find_epsilon(void) {
+  double epsilon = 0.5; //idealerweise ein Bruch 1/2, 1/4 oder 2^(-n) für Schnelligkeit
+  while ((1+epsilon) != 1) {
+    epsilon /= 2.0;
+  }
+  return epsilon;
+}
+int main(void) {
+  printf("Der Epsilon von Doubles ist: %lf", find_epsilon());
+  return 0;
+} */
