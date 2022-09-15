@@ -1,0 +1,34 @@
+Ich bin hier nicht so wirklich sicher worauf die Frage abziehlt.
+
+Wahrscheinlich sind Mutexes gemeint.
+#include<mutex>
+
+Also die Objekte aus der Klasse mutex:
+
+std::mutex my_mutex;
+
+Diese kann man nun in entsprechenden Stellen im Code verwenden um race-conditions
+zu vermeiden.
+
+race-conditions: Variablen die von mehreren Threads gleichzeitig genutzt werden.
+Das gemeinsame nutzen/ändern von Variablen durch threads kann zu Fehlern führen.
+
+Beispiel: Eine gemeinsame Warteschlange die von allen threads gelesen wird,
+um eine Aufgabe zu erhalten. Es wäre also schlecht, wenn threads gleichzeitig
+auf diese zugreifen, weil sie dann beide die gleiche Aufgabe bearbeiten würden.
+Das würde dazu führen, dass eine Aufgabe die eigentlich nur 1x laufen sollte dann
+2x läuft und dann auch 2x schreibt.
+
+Das kann man verhindern, indem man mutex-objekte nutzt um den kritischen Code 
+(also das was alle threads gleichzeitig nutzen) zu blocken und freizugeben.
+
+my_mutex.lock()
+kritischer Code
+my_mutex.unlock()
+
+führt dazu, dass der kritische Code immer nur noch einem thread genutzt werden
+kann. Die anderen threads müssen so lange warten.
+
+Es ist also sehr zu empfehlen den Code so zu strukturieren, dass der kritische
+Code möglichst schnelle und smart gewählte Operationen sind
+
