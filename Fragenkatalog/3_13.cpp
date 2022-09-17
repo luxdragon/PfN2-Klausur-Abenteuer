@@ -4,7 +4,7 @@ Antwort: Das passiert über Iteratoren
 
 
 Hier ist als Beispiel Aufgabe 1_24 mit vectoren genommen.
-Hier wird also mit einem Iterator über die Elemente des vectors iteriert
+Hier wird also mit einem Iterator über die Elemente des vectors iteriert.
 */
 
 
@@ -14,7 +14,7 @@ Hier wird also mit einem Iterator über die Elemente des vectors iteriert
 
 int main(void){
   std::vector<std::string> ckeywords
-  = {"auto", "double", "int", "struct", "break", "else", "long",
+  = {"ughgj", "double", "int", "struct", "break", "else", "long",
       "switch", "case", "enum", "register", "typedef", "char",
       "extern", "return", "union", "const", "float", "short",
       "unsigned", "continue", "for", "signed", "void", "default",

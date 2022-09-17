@@ -1,5 +1,5 @@
 /*
-Wieder daran denken dass lpthread extra gelinked werden muss. 
+Wieder daran denken dass lpthread extra gelinked werden muss.
 Befehl zum compilen:
 c++ -o 4_03.o 4_03.cpp -lpthread
 
@@ -21,7 +21,7 @@ komplett durchblickt udn verstanden habe.
 #include <cassert>
 #include <mutex>
 
-//#### Manager-Klasse aus der Vorlesung #### 
+//#### Manager-Klasse aus der Vorlesung ####
 
 class VirtualQueue {
   private:
@@ -69,7 +69,7 @@ void pfn_run_threaded(size_t num_threads, size_t number_of_tasks, PfNThreadFunc 
     std::vector<std::thread> threads{};
     VirtualQueue vq(number_of_tasks);
     for (size_t thd = 0; thd < num_threads; thd++)
-      threads.push_back(std::thread(pfn_thread_apply_thread_func, 
+      threads.push_back(std::thread(pfn_thread_apply_thread_func,
                                     thread_func,thread_data,
                                     &vq, thd));
     for (auto &th : threads) th.join();
@@ -95,7 +95,7 @@ void eval_f(size_t thread_id, size_t task_num, void *thread_data){ // k ist gewÃ
 
 
 
-
+// TUTOR FRAGEN !!!
 
 //#### main und Hilfsfunktionen####
 
@@ -112,14 +112,14 @@ int main(void){
      table[i] = f(table[i]);
   }
   */
-  
+
 
   printf("mit threads: (sollte schneller gehen)\n");
   size_t num_of_threads = 4;
-  
+
   pfn_run_threaded(num_of_threads, num_tasks, eval_f, table);
   show_arr(table, num_tasks);
-  
+
 
 }
 

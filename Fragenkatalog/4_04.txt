@@ -19,16 +19,17 @@ auf diese zugreifen, weil sie dann beide die gleiche Aufgabe bearbeiten würden.
 Das würde dazu führen, dass eine Aufgabe die eigentlich nur 1x laufen sollte dann
 2x läuft und dann auch 2x schreibt.
 
-Das kann man verhindern, indem man mutex-objekte nutzt um den kritischen Code 
+Das kann man verhindern, indem man mutex-objekte nutzt um den kritischen Code
 (also das was alle threads gleichzeitig nutzen) zu blocken und freizugeben.
 
 my_mutex.lock()
 kritischer Code
 my_mutex.unlock()
 
+//TUTOR fragen
+
 führt dazu, dass der kritische Code immer nur noch einem thread genutzt werden
 kann. Die anderen threads müssen so lange warten.
 
 Es ist also sehr zu empfehlen den Code so zu strukturieren, dass der kritische
 Code möglichst schnelle und smart gewählte Operationen sind
-

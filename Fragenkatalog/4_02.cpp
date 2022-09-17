@@ -13,7 +13,7 @@ sieht man, dass die threads pro Aufruf jeden mal anders vom OS gehandhabt
 werden.
 
 Das was einfach zu printen ist, passiert sofort nach ihrem jeweiligen Aufruf.
-Die eigentliche Rechnung in jedem Thread dauert unterschiedlich lange für die 
+Die eigentliche Rechnung in jedem Thread dauert unterschiedlich lange für die
 verschiedenen Zahlen, deswegen ergibt sich auch jedes mal die gleiche
 Reihenfolge von Ergebnissen, da der Rechenaufwand unterschiedlich genug ist,
 sodass die threads für die jeweilige Aufgabe/Zahl immer in der gleichen
@@ -38,7 +38,7 @@ void eval_show_f(size_t n) {
 void eval_show_f_multithreaded(const size_t *values,size_t k){
   std::thread *threads; //Array in dem erzeugte Threads gespeichert werden sollen
   threads = new std::thread [k]; // anlegen von Speicher für die thread Objekte
-  
+
   for(size_t i = 0; i < k; ++i){ // in dieser Schleife werden die threads gestartet
     threads[i] = std::thread(eval_show_f, values[i]); //Frage: Das ist ja dann nicht wirklich gleichzeitig, sondern ganz schnelles hintereinander aufrufen. Also theorethisch laufen die threads dann gleichzeitig
   }
@@ -47,18 +47,19 @@ void eval_show_f_multithreaded(const size_t *values,size_t k){
     threads[j].join();
   }
 }
-
+// Tutor: hilf uns
 
 //#### main #####
 int main(void){
   size_t values[] = {39,42,41};
   size_t k = sizeof(values)/sizeof(values[0]);
-  
-  eval_show_f(values[0]);
+
+  eval_show_f(values[0]); //warum rufst du die schon hier auf
   eval_show_f(values[1]);
   eval_show_f(values[2]);
 
   std::cout << std::endl;
-  
+
   eval_show_f_multithreaded(values, k);
+  return EXIT_SUCCESS;
 }
