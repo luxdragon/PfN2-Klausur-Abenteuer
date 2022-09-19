@@ -41,7 +41,7 @@ set:
 - kann vorwärts und rückwärts iteriert werden
 std::set<char> a;
 a.insert('G');
-a.insert('G');
+std::cout << a[0];
 
 
 Kann man auf die Elemente von Set auch mit a[1] oder so zugreifen, oder muss man
