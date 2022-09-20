@@ -9,7 +9,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 #include <stdio.h>
 #include <stdlib.h> //wird für Malloc und drand48() gebraucht
 #include <time.h> //für die Initalisierung von drand48()
-//die Idee zu dieser Aufgabe findet man im Numerical-Skript auf den Folien 18-22 
+//die Idee zu dieser Aufgabe findet man im Numerical-Skript auf den Folien 18-22
 
 typedef int bool; //für bool-Werten
 const bool true = 1;
@@ -23,7 +23,7 @@ double estimate_volume(bool (*is_inside)(double, double, double), size_t num_poi
         if (is_inside(a,b,c)) {
             hits++;
         }
-    }   
+    }
     return (double) hits / num_points;
 }
 
@@ -37,6 +37,6 @@ bool czech(double x, double y, double z) { //das ist eine kleine Ecke im Quader
 
 int main(void) {
     srand48(time(NULL));
-    printf("%lf m2\n", estimate_volume(czech, 10000)); //wir erwarten 1/64, also 0,015625 m^3
+    printf("%lf m3\n", estimate_volume(czech, 10000)); //wir erwarten 1/64, also 0,015625 m^3
     return 0;
 }
