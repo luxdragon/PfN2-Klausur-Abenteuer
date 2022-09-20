@@ -2,9 +2,10 @@
 
 size_t replace_line_terminator(unsigned char *s, size_t n)  {
   //ist \r ein eingenes Zeichen? Ja, sieht man aus den Beispielen.
-  size_t m = 0
-  for (size_t i = 0; i < n-m; i++) {
-    if (s[i] == '\r') { //Würde dann nicht in Beispiel 4 ein \r ersetzt werden, das eigentlich stehenbleiben soll?
+  size_t m = 0;
+  for (size_t i = 0; i < n-m-1; i++) {
+    if (s[i] == '\r' && s[i+1]='\n') { //Würde dann nicht in Beispiel 4 ein \r ersetzt werden, das eigentlich stehenbleiben soll?
+      //ja hast recht, hab's korrigiert.
       //Verschiebung nach links, d.h. \r wird mit \n ersetzt und so weiter und so weiter
       for (size_t j = i; j < n-m; j++) {
         s[j] = s[j+1];
