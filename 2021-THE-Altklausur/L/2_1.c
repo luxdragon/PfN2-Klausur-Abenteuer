@@ -4,9 +4,11 @@
 
 char *random_sequence_iid(const char *alphabet, size_t n) {
   char *sequenz = malloc(n*sizeof(char));
-  size_t len = sizeof(alphabet)/sizeof(char) -1;
+  //size_t len = sizeof(alphabet)/sizeof(char) -1; //wunderschöner Fehler
+  size_t len;
+  for (len = 0; alphabet[len] != '\0'; len++); //wie man eigentlich die Länge bestimmt
   float frac = (float) 1/len;
-  printf("Len: %ld und frac: %f", sizeof(alphabet), frac); //schaut euch das an!!
+  //printf("Len: %ld und frac: %f", sizeof(alphabet), frac); //schaut euch das an!!
   for (size_t i = 0; i < n; i++) {
     float wert = drand48();
     for (size_t j = 1; j <= len; j++) {
