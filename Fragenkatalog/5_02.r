@@ -4,5 +4,4 @@ print(typeof(a))
 #Ausgabe:
 #"logical"
 
-#Vielleicht ein Logical-Vektor?
-#Könnte es sogar einfach nur ein char-Vektor sein?
+#Vektor mit logischen Werten

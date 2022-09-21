@@ -12,10 +12,6 @@ char *random_sequence_iid(const char *alphabet, size_t n) {
     float wert = drand48();
     size_t j = (size_t) wert * len;
     sequenz[i] = alphabet[j];
-
-
-
-
   }
   return sequenz;
 }

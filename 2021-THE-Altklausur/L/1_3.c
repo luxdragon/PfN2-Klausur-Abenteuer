@@ -17,7 +17,7 @@ size_t replace_line_terminator(unsigned char *s, size_t n)  {
 }
 
 int main(void) {
-  unsigned char wort[] = "acgt\r\nabc\r\n"; //das wird "azgpfftnjrnabezenjrnjnnn" ausgesprochen
+  unsigned char wort[] = "acgt\r\nabc\r\n\r\n"; //das wird "azgpfftnjrnabezenjrnjnnn" ausgesprochen
   printf("Test: %ld\n", replace_line_terminator(wort, 11));
   printf("Der neue String ist: %s\n", wort); //yay es klappt :D
   return 0;
