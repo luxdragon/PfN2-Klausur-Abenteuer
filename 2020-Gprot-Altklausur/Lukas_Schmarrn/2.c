@@ -36,7 +36,7 @@ int *merge_arrays(const int *a, unsigned long alen, const int *b, unsigned long 
   }
   int *newarr = malloc(sizeof(int)*(alen+blen));
   unsigned long i = 0, j = 0;
-  while (i != alen-1 && j != blen-1) { //vergessen hier -1 zu schreiben
+  while (i < alen && j < blen) {
     if (a[i] == b[j]) {
       newarr[i+j] = a[i];
       i++;

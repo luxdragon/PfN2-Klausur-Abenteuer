@@ -1,1 +1,1 @@
-#mean(k)
+#mean(c)
