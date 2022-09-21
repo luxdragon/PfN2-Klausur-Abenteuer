@@ -37,7 +37,7 @@ int *merge_arrays(const int *a, unsigned long alen, const int *b, unsigned long 
       bptr++;
       i++;
     }
-  assert(i == alen+blen);
+  assert(i == alen+blen); //optional aber schön
   return merged_arr;
 }
 
