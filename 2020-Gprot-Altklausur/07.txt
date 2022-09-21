@@ -1,0 +1,21 @@
+Angenommen das n-Queens-Problem hat die Größe von n: Also n Zeilen, n Spalten
+und n Queens.
+
+dann haben alle Zeilen i den Index 0 bis n-1
+dann haben alle Spalten j den Index 0 bis n-1
+
+Daraus folgt, dass der Wert von n nirgendwo vorkommen kann.
+
+Also initialisiert man ein 1D Array "positions der" Größe n.
+Dabei steht an jeden Index die Zahl n.
+
+Man lässt das Programm zur Lösung des n-Queens-Problem laufen. Jedes mal wenn
+eine Lösung an der Stelle (i,j) gefunden wird, wird in Array positions 
+an index i die Zahl der ensprechenden Zeile j geschrieben.
+
+Somit hat man nach Ablauf des Programms im Array solutions alle Informationen
+die man braucht:
+Wenn an Index i die Zahl j steht, dann weiß man, dass in der Lösung dort eine Queen
+stehen muss.
+Wenn an Index i die Zahl n steht, dann weiß man automatisch (weil es keine n'te
+Spalte gibt), dass es sich in diesem Fall um keine Lösung handelt.
