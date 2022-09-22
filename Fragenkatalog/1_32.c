@@ -21,3 +21,5 @@ long sum_of_lines(const char *progname, const char *filename) {
 }
 
 //Tutor fragen: Wie funktioniert sscanf beim ablesen von Variablen aus Strings?
+//Antwort: Die Funktion ist so aufgebaut, dass sie die Leerzeichen ignoriert, weil
+// "   3" als eine Zahl gelesen wird.

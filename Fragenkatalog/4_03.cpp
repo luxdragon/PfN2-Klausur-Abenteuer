@@ -48,7 +48,7 @@ class VirtualQueue {
     }
 };
 
-typedef void (*PfNThreadFunc)(size_t thread_id, size_t task_num, void *thread_data); // Folie 76 für Erklärung
+typedef void (*PfNThreadFunc)(size_t thread_id, size_t task_num, void *thread_data); // Folie 76 für "Erklärung"
 
 static void pfn_thread_apply_thread_func(PfNThreadFunc thread_func,
                                          void *thread_data,
@@ -95,7 +95,6 @@ void eval_f(size_t thread_id, size_t task_num, void *thread_data){ // k ist gew�
 
 
 
-// TUTOR FRAGEN !!!
 
 //#### main und Hilfsfunktionen####
 

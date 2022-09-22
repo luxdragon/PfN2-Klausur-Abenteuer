@@ -1,3 +1,3 @@
-//Bei void Funktionien ist der Rückgabetyp ein void-Zeiger.
+//Bei void Funktionien ist der Rückgabetyp ein Zeiger auf void.
 
-//Tutor fragen: Stimmt das?
+//Tutor fragen: Void ist einfach halt nichts

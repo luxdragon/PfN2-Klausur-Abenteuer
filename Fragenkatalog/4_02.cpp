@@ -40,14 +40,13 @@ void eval_show_f_multithreaded(const size_t *values,size_t k){
   threads = new std::thread [k]; // anlegen von Speicher für die thread Objekte
 
   for(size_t i = 0; i < k; ++i){ // in dieser Schleife werden die threads gestartet
-    threads[i] = std::thread(eval_show_f, values[i]); //Frage: Das ist ja dann nicht wirklich gleichzeitig, sondern ganz schnelles hintereinander aufrufen. Also theorethisch laufen die threads dann gleichzeitig
+    threads[i] = std::thread(eval_show_f, values[i]);
   }
 
   for(size_t j = 0; j < k; ++j){ // threads werden beendet
     threads[j].join();
   }
 }
-// Tutor: hilf uns
 
 //#### main #####
 int main(void){

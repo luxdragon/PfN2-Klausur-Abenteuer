@@ -14,3 +14,5 @@ class Protein{
     Protein(); //default Konstruktor
     ~Protein(); //default Destruktor
 };
+
+//Protein() und ~Protein() sollte man außerhalb der Klasse implementieren, sonst sind sie automatisch inline

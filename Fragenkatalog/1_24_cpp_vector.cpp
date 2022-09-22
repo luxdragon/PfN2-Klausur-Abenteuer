@@ -1,5 +1,5 @@
-/* 
-Aufgabe 1_24 mit C++ vectoren aus STL zu lösen, ist eine mögliche Variation 
+/*
+Aufgabe 1_24 mit C++ vectoren aus STL zu lösen, ist eine mögliche Variation
 der Aufgabe. Diese kam so oder ähnlich in der ersten Klausur SoSe2022 dran.
 */
 
@@ -15,10 +15,10 @@ int main(void){
       "unsigned", "continue", "for", "signed", "void", "default",
       "goto", "sizeof", "volatile", "do", "if", "static",
       "while"};
-  
+
   size_t count = 0;
   size_t n_elems = ckeywords.size();
-  
+
   for(auto i = ckeywords.begin(); i != ckeywords.end(); ++i){ // hier wird ein Iterator erstellt
     count += (*i).size(); // muss so sein, weil i als erstes derefenziert werden muss um Zugriff auf den eigentlichen string im vector zu haben
   }

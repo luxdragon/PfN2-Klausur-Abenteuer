@@ -14,11 +14,10 @@ Beispiel:
 std::vector<std::string> shpl;
 shpl.push_back("Johannes");
 shpl.push_back("Stephanie");
-shpl.push_back("John");
-shpl.insert("Max"); //Anfang oder Ende?
-// Was ist der Unterschied zwischen einem Vektor und Array.
+shpl.push_back("John"); //Push_back schiebt ein Element ans ende des Containers
+shpl.insert(1, "Max"); //Immer die Position an der ersten Stelle schreiben
 
-//gibt es das Befehl push_back in allen drei?
+//gibt es das Befehl push_back in allen drei? Ja
 
 map:
 #include<map>
@@ -42,10 +41,6 @@ set:
 std::set<char> a;
 a.insert('G');
 std::cout << a[0];
-
-
-Kann man auf die Elemente von Set auch mit a[1] oder so zugreifen, oder muss man
-iterieren, á la *(a+2) = a[2]?
 
 gerne ergänzen :D
 */
