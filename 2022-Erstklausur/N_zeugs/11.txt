@@ -1,0 +1,13 @@
+Thread kann als Funktion gesehen werden, welche eine ganz bestimmte Aufgabe ausführt.
+Diese Funktion läuft unabhängig vom Hauptprogramm.
+Diese Threads werden vom OS gehandhabt. 
+
+Threads können gleichzeitig laufen und somit Aufgaben gleichzeitig und 
+unabhängig voneinander ausführen.
+
+Schwierig wird es dann (oder kann es werden), wenn mehrere Threads auf den
+gleichen Speicherbereich zugreifen.
+
+
+Genauer sind Threads unabhängige Streams von Anweisungen welche vom OS geplant
+und ausgeführt werden können.
