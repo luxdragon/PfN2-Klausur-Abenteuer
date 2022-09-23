@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> //für EXIT_FAILURE und EXIT_SUCCESS
 
 typedef int *(*FuncType) (const char *, char *, int, double);
 //ein Zeiger auf eine Funktion, die einen Zeiger/Array liefert. Wieso habe ich nicht Theologie gewählt?

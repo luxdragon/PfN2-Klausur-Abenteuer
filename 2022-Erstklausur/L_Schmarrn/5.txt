@@ -14,3 +14,5 @@ kleinere Stücke zu erhalten, ebenso kann man den Prozess mit Multithreading deu
 beschleunigen.
 
 Die Stückchen der Produktmatrix werden dann zusammengesetzt und die Produktmatrix ausgegeben.
+
+// Es gibt noch drei verschiedene Fälle <- die musst du auch noch auswendig lernen

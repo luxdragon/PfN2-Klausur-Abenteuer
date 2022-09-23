@@ -25,4 +25,3 @@ void enumerate_series(void){
 int main(void){
   enumerate_series();
 }
-
