@@ -1,0 +1,16 @@
+#include "5.png"
+
+Wie in der Skizze dargestellt ist ein Eintrag in der Produktmatrix die Summe der
+Produkte von den horizontalen Einträge der ersten Matrix und der vertikalen Einträge
+der zweiten Matrix.
+
+Wir können nun eine Matrix horizontal und die andere vertikal in zwei Teile zerteilen
+und dadurch die vier Teile der Produktmatrix einzeln berechnen. Dies ermöglich uns die
+Matrix kleiner zu machen und so den Prozess in den Registern, der Cache oder maximal dem RAM
+durzuführen, was die Laufzeit verbessert.
+
+Die geteilten Matrizen können dann auch weiterhin (rekursiv) getielt werden, um noch
+kleinere Stücke zu erhalten, ebenso kann man den Prozess mit Multithreading deutlich
+beschleunigen.
+
+Die Stückchen der Produktmatrix werden dann zusammengesetzt und die Produktmatrix ausgegeben.
