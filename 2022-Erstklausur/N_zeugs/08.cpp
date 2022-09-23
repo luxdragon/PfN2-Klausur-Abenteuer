@@ -1,11 +1,12 @@
 /*
-Wir hatten zwar nie maps und schon gar nicht mit 2 keys, aber whatever right?
+Bitte sagt Bescheid, wenn ihr eine bessere/einfachere Lösung habt :D
 
+Wir hatten zwar nie maps und schon gar nicht mit 2 keys, aber whatever right?
 pair Funktion zum erstellen eines keys benutzt
 
 Nach meinem Geschmack viel zu viel spezieller Kram den man sich jetzt noch merken muss
 
-Nach dieser Aufgabe min. 3 graue Haare mehr, wie soll man sich das mit unserem Wissen man kurz in der Klausur ausdenken?
+Nach dieser Aufgabe min. 3 graue Haare mehr, wie soll man sich das mit unserem Wissen man kurz in der Klausur ausdenken? xD
 */
 
 #include<iostream>
