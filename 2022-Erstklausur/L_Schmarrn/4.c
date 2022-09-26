@@ -53,8 +53,7 @@ int main(void) {
   Date d5;
   d5.year = 2000;
   d5.month = "Mar";
-
-  //diese habe ich schamlos von Niels geklaut :D
+  
   Date tab[] = {d1,d2,d3,d4,d5};
   size_t tab_len = 5;
   sort_dates(tab, tab_len);
